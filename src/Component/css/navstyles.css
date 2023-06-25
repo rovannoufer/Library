@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montderrat:500');
+
+header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1b2840;
+}
+
+
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.Lib {
+    cursor: pointer;
+}
+
+.nav__links {
+       list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+/* .nav__links li a:hover {
+    color: #0088a9;
+} */
+
+button {
+    padding: 9px 25px;
+     border : none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+.box { 
+     height: 30px;
+     display: flex;
+     cursor: pointer;
+     padding: 10px 20px;
+     background-color: #fff;
+     border-radius: 30px;
+     align-items : center;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.box:hover input{
+    width: 200px;
+}
+
+.box input {
+    width : 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;   
+}
+
+.box .fas .das{
+    color:  #1b2840;
+    font-size: 18px;
+}
