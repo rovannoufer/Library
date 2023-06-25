@@ -4,6 +4,7 @@ import {
      signInWithEmailAndPassword,
      onAuthStateChanged,
      GoogleAuthProvider,
+     signInWithRedirect,
      signInWithPopup
 } from 'firebase/auth';
 
@@ -23,7 +24,7 @@ export function UserAuthContextProvider({children}){
        }
        function googleSignIn(){
         const googleAuthProvider = new GoogleAuthProvider();
-        return signInWithPopup(auth, googleAuthProvider);
+        return signInWithRedirect(auth, googleAuthProvider);
     }
 
        useEffect(() => {
