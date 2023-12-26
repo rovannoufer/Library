@@ -4,7 +4,7 @@ import './css/writer.css';
 export default function Writersinfo(props) {
   return (
     <div className='writer'>
-      <div className='card'>
+      <div className='card-container'>
         <img className='product--image' 
         src={props.url}
          alt='Writers image'/>

@@ -27,17 +27,11 @@ export default function Writer() {
             <ul className="nav__links">
               <li><Link to='/books'>Books</Link></li>
               <li><Link to='/writer'>Writers</Link></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Subscribe</a></li>
               <li><Link to='/signup'>SignIn</Link></li>
             </ul>
           </nav>
-          <div className="box">
-        <input type="text" placeholder="Search.."  style={{ color: '#1b2840'}}/>
-        <button  style={{ color: '#fff'}}> 
-          <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: '#fff'}}/> </button>
-            
-      </div>  
+  
+              
         </header>
        
         <Carousel responsive={responsive} >

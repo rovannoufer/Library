@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../css/search.css'; // Import the CSS file for styling
 import { LiaBookSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
-import { colors } from '@mui/material';
+
 
 export default function Searchbar() {
   const [book, setBook] = useState("");
@@ -23,17 +23,16 @@ export default function Searchbar() {
         setResult(data.data.items);
       });
   }
-
+  
+  
   return (
     <>
     <header>
           <Link to="/header"><LiaBookSolid size={100}/></Link>
           <nav>
             <ul className="nav__links">
-              <li><a href="#">Books</a></li>
+            <li><Link to='/books'>Books</Link></li>
               <li><Link to='/writer'>Writers</Link></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Subscribe</a></li>
               <li><Link to='/signup'>SignIn</Link></li>
             </ul>
           </nav>
@@ -48,12 +47,15 @@ export default function Searchbar() {
       </form>
 
       <div className="card-container">
-        {result.map(book => (
+        {result.map((book) => (
+         
           <a href={book.volumeInfo.previewLink} target={'_blank'} key={book.id}>
             <div className="card">
-              <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.title} />
+              <img  src={book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.smallThumbnail} alt={book.title} />
               <p style={{color: "#1b2840"}}>{book.volumeInfo.title}</p>
               <p style={{color: "#1b2840"}}>{book.volumeInfo.authors}</p>
+              
+              <p style={{color: "#1b2840"}}>[{book.volumeInfo.categories}]</p>
             </div>
           </a>
         ))}

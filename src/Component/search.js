@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { Card } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 import './css/navstyles.css';
 import './css/footer.css';
 import './css/body.css';
@@ -33,14 +33,12 @@ const GoogleBooksSearch = () => {
           </a>
           <nav>
             <ul className="nav__links">
-              <li><a href="#">Books</a></li>
-              <li><a href="./Writer.html" target="_blank">Writers</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Subscribe</a></li>
-              <li><a href="#">SignIn</a></li>
+              <li><Link to='/books'>Books</Link></li>
+              <li><Link to='/writer'>Writers</Link></li>
+              <li><Link to='/signup'>SignIn</Link></li>
             </ul>
           </nav>
-          <div className="box">
+          <div >
             <input type="text" placeholder="Search.."onChange={handleSubmit} />
             <a className="das cta" href="#">
               <i className="fa-solid fa-magnifying-glass" style={{ color: '#1b2840' }}></i>
