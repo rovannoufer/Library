@@ -41,7 +41,7 @@ span {
 }
 
 a {
-	color: #333;
+	color: black;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
@@ -50,7 +50,7 @@ a {
 
 .button1 {
 	border-radius: 10px;
-	background-color: #1b2840;
+	background-color: black;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -62,8 +62,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #1b2840;
-	background-color: #1b2840;
+	border: 1px solid white;
+	background-color: black;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -173,9 +173,9 @@ input {
 } */
 
 .overlay {
-	background: #1b2840;
-	background: -webkit-linear-gradient(to right, #1b2840, #1b2840);
-	background: linear-gradient(to right, #1b2840, #1b2840);
+	background: black;
+	/* background: -webkit-linear-gradient(to right, #1b2840, #1b2840); */
+	/* background: linear-gradient(to right, #1b2840, #1b2840); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -239,21 +239,6 @@ input {
 	width: 40px;
 }
 
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: relative;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-/* footer p {
-    margin: 10px 0;
-} */
 
 .center{
 		display: flex;

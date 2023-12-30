@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './css/navstyles.css';
-import './css/footer.css';
 import './css/body.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { BsFacebook } from 'react-icons/bs';
-import { BsInstagram, BsTwitter, BsLinkedin } from 'react-icons/bs';
 import { LiaBookSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
-import image from './img/Library.gif'
+import image from './img/mikolaj-DCzpr09cTXY-unsplash.jpg'
 
 
 export default function Header() {
